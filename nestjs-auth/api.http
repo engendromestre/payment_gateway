@@ -1,0 +1,26 @@
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Admin",
+    "email": "admin@user.com",
+    "password": "admin",
+    "role": "ADMIN"
+}
+
+###
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQHVzZXIuY29tIiwiaWF0IjoxNzQzNzI4MDkzLCJleHAiOjE3NDM3MzUyOTN9.1um-4-smn114xBwdG9PfVOo9ZX8VkZx-lwkWSSNEVz8
+
+
+###
+GET http://localhost:3000/users/cm920ze7o0000o7u7hhiauhln
+
+###
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "admin@user.com",
+    "password": "admin"
+}
